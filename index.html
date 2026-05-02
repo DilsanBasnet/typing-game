@@ -3,10 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Typing Web Game by Dilsan Basnet</title>
 </head>
+
 <body>
+    
+    <div id="game-container">
+        <div id="top-bar">
+            <div class="left-group">
+                <img src="2294.png" alt="Dilsan Profile Pic" class="profile-pic">
+                <div class="game-name">Cyber - Typer</div>
+            </div>
+
+            <div class="start-group">
+                <div class="start-item">
+                    <span class="stat-label">WPM</span>
+                    <span id="wpm-val" class="stat-value">0</span>
+                </div>
+
+                <div class="stat-item">
+                    <span class="stat-label">accuracy</span>
+                    <span id="acc-val" class="stat-value">0%</span>
+                </div>
+
+                <div class="stat-item">
+                    <span class="stat-label">time</span>
+                    <span id="timer-val" class="stat-value">30</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="typing-window">
+            <div id="caret"></div>
+            <div id="words-wrapper"></div>
+        </div>
+
+        <div class="footer-hint">
+            <span>tab</span> + <span>enter</span> + <span>to restart protocol</span>
+        </div>
+
+        <input type="text" id="hidden-input" autofocus autocomplete="off" autocapitalize="off" spellcheck ="false">
+    </div>
     
     
 </body>
+
 </html>
