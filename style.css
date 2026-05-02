@@ -1,1 +1,42 @@
 
+/* Style for the typing game */
+:root {
+    --bg: #313234;
+    --surface: #232528;
+    --sub-color: #696c70;
+    --text: #b8b7ae;
+    --border: #464545;
+    --primary: #cda411;
+    --error: #be414d;
+    --font: monospace , sans-serif;
+
+}
+
+body {
+    background-color: var(--bg);
+    font-family: var(--font);
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+    overflow: hidden;
+
+}
+
+*{box-sizing: border-box;}
+
+#game-container {
+    width: 80%;
+    max-width: 999px;
+    position: relative;
+}
+
+#top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 55px;
+}
+
