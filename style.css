@@ -142,7 +142,7 @@ body {
     margin-top: 49px;
 }
 
-.tab-enter-restart {
+kbd {
     background: var(--surface);
     padding: 3px 7px;
     color: var(--text);
