@@ -1,12 +1,12 @@
 /* Style for the typing game */
 :root {
-    --bg: #313234;
-    --surface: #232528;
-    --sub-color: #696c70;
-    --text: #b8b7ae;
+    --bg: #313d15;
+    --surface: #1e3252;
+    --sub-color: #7b7f83;
+    --text: #ffffff;
     --border: #464545;
-    --primary: #cda411;
-    --error: #b83643;
+    --primary: #b1942c;
+    --error: #b82533;
     --font: monospace, sans-serif;
 
 }
@@ -17,6 +17,7 @@ body {
     font-family: var(--font);
     color: var(--text);
     display: flex;
+    flex-direction: column;
     align-items: center;
     height: 100vh;
     justify-content: center;
@@ -67,7 +68,7 @@ body {
 
 .stat-group {
     display: flex;
-    gap: 31px;
+    gap: 30px;
 }
 
 .stat-item {
@@ -76,9 +77,10 @@ body {
 }
 
 .stat-label {
+    
     color: var(--sub-color);
     margin-bottom: 2px;
-    font-size: 1rem;
+    font-size: 1.4rem;
     
 }
 
@@ -96,17 +98,18 @@ body {
 
 .letter {
     position: relative;
-    transition: color 0.1 ease-in;
+    transition: color 0.1s ease-in;
 }
 
 #words-wrapper {
+    display: flex;
+    flex-wrap: wrap;
     top: 0;
     position: relative;
     transition: top 0.3s ease;
     line-height: 2.2;
     font-size: 1.9rem;
     gap: 0 0.8rem;
-    display: flex;
     color: var(--sub-color);
 }
 
@@ -147,6 +150,7 @@ kbd {
     padding: 3px 7px;
     color: var(--text);
     border-radius: 5px;
+    font-size: 0.9rem;
 }
 
 #subfooter {
@@ -157,10 +161,11 @@ kbd {
 }
 
 .history-title {
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     color: var(--sub-color);
     padding-top: 24px;
     width: 100%;
+    font-family: cursive
     ;
 }
 
@@ -187,6 +192,46 @@ kbd {
     opacity: 0.6;
 }
 
+footer {
+    margin-top: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: var(--sub-color);
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.footer-content b {
+    color: var(--text);
+    font-weight: bold;
+}
+.footer-separator {
+    opacity: 0.3;
+}
+.github-link{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--sub-color);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, 
+    transform 0.2s ease;
+}
+
+.github-link:hover {
+    color: var(--primary);
+    transform: translateY(-2px);
+}
+
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -198,3 +243,4 @@ kbd {
         transform: translateY(0); 
     }
 }
+
