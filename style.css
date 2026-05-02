@@ -1,4 +1,3 @@
-
 /* Style for the typing game */
 :root {
     --bg: #313234;
@@ -7,10 +6,11 @@
     --text: #b8b7ae;
     --border: #464545;
     --primary: #cda411;
-    --error: #be414d;
-    --font: monospace , sans-serif;
+    --error: #b83643;
+    --font: monospace, sans-serif;
 
 }
+
 
 body {
     background-color: var(--bg);
@@ -25,7 +25,9 @@ body {
 
 }
 
-*{box-sizing: border-box;}
+* {
+    box-sizing: border-box;
+}
 
 #game-container {
     width: 80%;
@@ -40,3 +42,159 @@ body {
     margin-bottom: 55px;
 }
 
+.profile-pic {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--sub-color);
+    transition: filter 0.3s ease;
+
+}
+
+.left-group {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
+
+.game-name {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: -1px;
+    color: var(--text)
+}
+
+.stat-group {
+    display: flex;
+    gap: 31px;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-label {
+    color: var(--sub-color);
+    margin-bottom: 2px;
+    font-size: 1rem;
+    
+}
+
+.stat-value {
+    font-size: 2rem;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+#typing-window {
+    height: 120px;
+    overflow: hidden;
+    position: relative;
+}
+
+.letter {
+    position: relative;
+    transition: color 0.1 ease-in;
+}
+
+#words-wrapper {
+    top: 0;
+    position: relative;
+    transition: top 0.3s ease;
+    line-height: 2.2;
+    font-size: 1.9rem;
+    gap: 0 0.8rem;
+    display: flex;
+    color: var(--sub-color);
+}
+
+.letter.correct {
+    color: var(--text);
+}
+
+.letter.incorrect {
+    color: var(--error)
+}
+
+#caret {
+    position: absolute;
+    width: 2px;
+    height: 1.7rem;
+    background-color: var(--primary);
+    border-radius: 3px;
+    top: 0.5rem;
+    transition: all 0.1s ease;
+}
+
+#hidden-input {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.footer-hint {
+    font-size: 0.9rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--sub-color);
+    margin-top: 49px;
+}
+
+.tab-enter-restart {
+    background: var(--surface);
+    padding: 3px 7px;
+    color: var(--text);
+    border-radius: 5px;
+}
+
+#subfooter {
+    margin-top: 90px;
+    border-top: 1px solid var(--border);
+    width: 100%;
+    padding-top: 24px
+}
+
+.history-title {
+    font-size: 0.9rem;
+    color: var(--sub-color);
+    padding-top: 24px;
+    width: 100%;
+    ;
+}
+
+.history-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    color: var(--sub-color);
+    border-bottom: 1px solid rgb(255, 255, 255, 0.05);
+    animation: fadeIn 0.3s ease;
+}
+
+.history-item span:first-child {
+    color: var(--primary);
+    font-weight: bolder;
+    font-family: monospace;
+}
+
+.empty-state {
+    display: block;
+    text-align: center;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
