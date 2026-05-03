@@ -1,23 +1,21 @@
-# Project 🚀
-# Cyber-Typer ⚡
-**A minimalist, high-performance typing speed test web game. **
+# Macondo Project
+# Cyber-Typer 
+**A minimalist, high-performance typing web game. **
 
-**Cyber-Typer** is a web-based typing application built to help developers and users to sharpen their muscle memory and typing speed. Inspired by minimalist design protocols, it focuses on raw performance and clean aesthetics.
+**Cyber-Typer** is a web-based typing game built to help developers and users to sharpen their muscle memory and to increase typing speed.
 
 [**Live Demo**](https://typing-game-beta-weld.vercel.app/) 
 
 ---
 
-## ✨ Features
-*   **Minimalist UI:** A distraction-free "Olive Earth" theme for maximum focus.
-*   **Live Metrics:** Real-time calculation of **WPM** (Words Per Minute) and **Accuracy**.
-*   **Cyber-Dictionary:** Practice using a custom-curated list of cybersecurity and programming terminology.
-*   **Test History:** Track your performance across multiple sessions with a built-in history log.
-*   **Responsive Engine:** Smooth, hardware-accelerated caret movement and word transitions.
-*   
+## Features are:
+*   **Minimalist UI:** User-friendly theme .
+*   **Live Calculation:** Real-time calculation of **WPM** and **Accuracy**.
+*   **Test History:** Track user performance across multiple sessions with a built-in history log. for history.
+*   **Clean Font:** User-friendly font-size, family etc.   
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 *   **Frontend:** HTML5, CSS3 
 *   **Logic:** Vanilla JavaScript
 *   **Typography:** Monospace font
@@ -28,7 +26,7 @@
 
 
 
-## 👤 Author
+## Author:
 **Dilsan Basnet**
 *   GitHub: [@DilsanBasnet](https://github.com/DilsanBasnet)
 *   Project: Cyber-Typer
